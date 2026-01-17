@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Center</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-50">
+
+<!-- OFFER BANNER -->
+<div class="bg-yellow-400 text-black text-center p-3 font-bold sticky top-0 z-50">
+🎉 New Year Special Offer — Flat 20% OFF + Free Demo Class 🎉
+</div>
+
+<!-- HERO -->
+<section class="bg-gradient-to-r from-purple-600 to-indigo-700 text-white h-screen flex flex-col justify-center items-center text-center px-4">
+<h1 class="text-5xl font-bold mb-4" data-aos="zoom-in">Upgrade Your Skills. Build Your Future.</h1>
+<p class="text-xl mb-6" data-aos="fade-up">Industry-ready training with real-world projects</p>
+
+<div data-aos="fade-up">
+<a href="contact.html" class="bg-white text-purple-700 font-bold px-6 py-3 rounded mr-4 hover:bg-gray-100">
+  Enquire Now
+</a>
+<a href="contact.html" class="border border-white px-6 py-3 rounded hover:bg-white hover:text-purple-700">Contact Us</a>
+</div>
+</section>
+
+<!-- ABOUT US -->
+<section class="py-16 px-4 bg-white">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+    <!-- LEFT CONTENT -->
+    <div data-aos="fade-right">
+      <h2 class="text-4xl font-bold mb-4">About Us</h2>
+      <p class="text-gray-700 mb-4">
+        We are a professional offline training institute dedicated to helping
+        students and working professionals build real-world skills that matter.
+      </p>
+      <p class="text-gray-700 mb-6">
+        Our focus is on practical learning, expert mentorship, and career-oriented
+        training programs designed to prepare you for real industry challenges.
+      </p>
+
+      <a href="contact.html"
+        class="inline-block bg-purple-700 text-white px-6 py-3 rounded hover:bg-purple-800">
+        Enquire Now
+      </a>
+    </div>
+
+    <!-- RIGHT HIGHLIGHTS -->
+    <div class="grid grid-cols-2 gap-6" data-aos="fade-left">
+      <div class="p-6 bg-gray-100 rounded shadow text-center">
+        🎓
+        <h3 class="font-bold mt-2">Expert Trainers</h3>
+        <p class="text-sm text-gray-600">Industry-experienced mentors</p>
+      </div>
+
+      <div class="p-6 bg-gray-100 rounded shadow text-center">
+        🧑‍💻
+        <h3 class="font-bold mt-2">Practical Training</h3>
+        <p class="text-sm text-gray-600">Hands-on learning approach</p>
+      </div>
+
+      <div class="p-6 bg-gray-100 rounded shadow text-center">
+        📜
+        <h3 class="font-bold mt-2">Certification</h3>
+        <p class="text-sm text-gray-600">Recognized certificates</p>
+      </div>
+
+      <div class="p-6 bg-gray-100 rounded shadow text-center">
+        ⭐
+        <h3 class="font-bold mt-2">Trusted Institute</h3>
+        <p class="text-sm text-gray-600">Hundreds of successful students</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- WHY US -->
+<section class="py-16 bg-white">
+<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+<div data-aos="fade-up">🎓<h3 class="font-bold">Certified Trainers</h3></div>
+<div data-aos="fade-up">🧑‍💻<h3 class="font-bold">Live Training</h3></div>
+<div data-aos="fade-up">📜<h3 class="font-bold">Certification</h3></div>
+<div data-aos="fade-up">⭐<h3 class="font-bold">1000+ Students</h3></div>
+</div>
+</section>
+
+<!-- COURSES -->
+<section id="courses" class="py-16 px-4">
+<h2 class="text-4xl text-center font-bold mb-10" data-aos="fade-up">Our Courses</h2>
+<div id="coursesGrid" class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+</div>
+</section>
+
+<!-- BLOGS -->
+<section class="py-16 px-4 bg-gray-100">
+<h2 class="text-4xl text-center font-bold mb-10" data-aos="fade-up">Our Blog</h2>
+<div id="blogsGrid" class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto"></div>
+</section>
+
+<!-- CONTACT SHORT -->
+<section class="py-16 text-center bg-white">
+<h2 class="text-3xl font-bold mb-4">Need Help Choosing a Course?</h2>
+<a href="contact.html" class="bg-purple-700 text-white px-6 py-3 rounded hover:bg-purple-800">Contact Us</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-800 text-white py-6 text-center">
+&copy; 2026 Course Center. All rights reserved.
+</footer>
+
+<!-- CHAT BUTTON -->
+<button id="chatBtn" class="fixed bottom-5 right-5 bg-purple-700 text-white p-3 rounded-full shadow-lg">💬</button>
+
+<!-- CHAT BOX -->
+<div id="chatBox" class="fixed bottom-20 right-5 w-72 bg-white shadow-lg rounded hidden z-50">
+<div class="bg-purple-700 text-white p-3">AI Chat</div>
+<div id="chatMessages" class="p-3 h-40 overflow-y-auto text-sm"></div>
+<div class="p-3">
+<input id="chatInput" class="w-full border p-2 rounded" placeholder="Type message...">
+<button id="sendBtn" class="mt-2 w-full bg-purple-700 text-white p-2 rounded">Send</button>
+</div>
+</div>
+
+<!-- JS -->
+<script src="js/main.js"></script>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({duration:800, once:true});</script>
+
+</body>
+</html>
